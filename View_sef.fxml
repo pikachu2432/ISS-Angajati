@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TabPane prefHeight="386.0" prefWidth="602.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Angajati">
+               <content>
+                  <TableView prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn prefWidth="56.79998779296875" text="Nr. crt." />
+                      <TableColumn prefWidth="140.0" text="Nume Prenume" />
+                        <TableColumn prefWidth="75.0" text="Functie" />
+                        <TableColumn prefWidth="75.0" text="Data" />
+                    </columns>
+                  </TableView>
+               </content></Tab>
+          <Tab text="Transmitere sarcini">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Nume prenume:" />
+                        <Label layoutX="14.0" layoutY="63.0" text="Denumire sarcina:" />
+                        <Label layoutX="14.0" layoutY="120.0" text="Termen limita:" />
+                        <Label layoutX="14.0" layoutY="180.0" text="Observatii:" />
+                        <TextField layoutX="14.0" layoutY="32.0" prefHeight="26.0" prefWidth="192.0" promptText="Numele si prenumele angajatului" />
+                        <TextField layoutX="16.0" layoutY="81.0" prefHeight="26.0" prefWidth="238.0" promptText="Sarcina pe care trebuie sa o indeplineasca" />
+                        <TextField layoutX="16.0" layoutY="147.0" prefHeight="26.0" prefWidth="279.0" promptText="Data pana la care sarcina trebuie sa fie indeplinita" />
+                        <TextField layoutX="16.0" layoutY="204.0" prefHeight="26.0" prefWidth="279.0" promptText="Informatii suplimentare" />
+                        <Button layoutX="16.0" layoutY="266.0" mnemonicParsing="false" text="Trimite" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Solicitari">
+               <content>
+                  <DialogPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="480.0">
+                      <header>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+                      </header>
+                      <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+                      </content>
+                      <expandableContent>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+                      </expandableContent>
+                  </DialogPane>
+               </content>
+               <content>
+                  <TableView prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn prefWidth="44.800018310546875" text="Nr. crt." />
+                      <TableColumn prefWidth="105.60000610351562" text="Nume solicitant" />
+                        <TableColumn prefWidth="94.4000244140625" text="Ora solicitata" />
+                        <TableColumn prefWidth="75.0" text="Motiv" />
+                        <TableColumn prefWidth="150.39996337890625" text="Aprobare" />
+                    </columns>
+                  </TableView>
+               </content>
+            </Tab>
+            <Tab text="Log out">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="284.0" prefWidth="600.0">
+                     <children>
+                        <Label layoutX="192.0" layoutY="106.0" text="Esti sigur ca doresti sa te deloghezi?" />
+                        <Button layoutX="300.0" layoutY="159.0" mnemonicParsing="false" text="Nu" />
+                        <Button layoutX="239.0" layoutY="159.0" mnemonicParsing="false" text="Da" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</VBox>

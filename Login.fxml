@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.Avatar?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="345.0" prefWidth="279.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar prefHeight="26.0" prefWidth="640.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="New" />
+                  <MenuItem mnemonicParsing="false" text="Open…" />
+                  <Menu mnemonicParsing="false" text="Open Recent" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Close" />
+                  <MenuItem mnemonicParsing="false" text="Save" />
+                  <MenuItem mnemonicParsing="false" text="Save As…" />
+                  <MenuItem mnemonicParsing="false" text="Revert" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Preferences…" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Quit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Undo" />
+                  <MenuItem mnemonicParsing="false" text="Redo" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Cut" />
+                  <MenuItem mnemonicParsing="false" text="Copy" />
+                  <MenuItem mnemonicParsing="false" text="Paste" />
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Select All" />
+                  <MenuItem mnemonicParsing="false" text="Unselect All" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About MonitorizareAngajati" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <AnchorPane prefHeight="374.0" prefWidth="600.0">
+         <children>
+            <Avatar layoutX="125.0" layoutY="14.0">
+               <image>
+                  <Image url="@../Programare%20Web/home.png" />
+               </image>
+            </Avatar>
+            <Label layoutX="122.0" layoutY="169.0" text="Parola:" />
+            <Label layoutX="125.0" layoutY="57.0" text="Nume:" wrapText="true" />
+            <TextField layoutX="40.0" layoutY="75.0" prefHeight="26.0" prefWidth="200.0" promptText="Completeaza numele si prenumele" />
+            <SplitMenuButton layoutX="85.0" layoutY="130.0" mnemonicParsing="false" text="Alege functia">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Sef" />
+                  <MenuItem mnemonicParsing="false" text="Angajat" />
+               </items>
+            </SplitMenuButton>
+            <Label layoutX="119.0" layoutY="112.0" text="Functie:" />
+            <PasswordField layoutX="76.0" layoutY="187.0" prefHeight="26.0" prefWidth="133.0" promptText="Completeaza parola" />
+            <Button layoutX="120.0" layoutY="230.0" mnemonicParsing="false" text="Login">
+               <effect>
+                  <Reflection />
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
